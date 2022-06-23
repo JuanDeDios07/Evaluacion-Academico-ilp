@@ -17,4 +17,15 @@ public class PersonaServiceImpl implements IPersonaService {
     public List<Persona> listarPersona() {
         return this.personaDao.findAll();
     }
+
+    @Override
+    public List<Persona> listarPersonas01() {
+        return this.personaDao.findAll();
+    }
+
+    @Override
+    public Persona registraPersona(Persona persona) {
+        return this.personaDao.save(persona);
+        //return this.escuelaDao.save(escuela);
+    }
 }

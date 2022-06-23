@@ -29,6 +29,14 @@ public class Persona {
     @ManyToOne(optional = false, cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Direccion direccion;
 
+    public Persona(String nombre, String apellido, String telefono, String email, Direccion direccion) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.telefono = telefono;
+        this.email = email;
+        this.direccion = direccion;
+    }
+
     public Persona() {
     }
 
