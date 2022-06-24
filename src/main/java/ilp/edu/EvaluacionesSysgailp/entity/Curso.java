@@ -5,6 +5,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
+// este es asignatura profesor
 @Table(name="curso")
 public class Curso {
 
